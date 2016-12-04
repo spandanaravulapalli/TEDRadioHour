@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="app name"
+        android:id="@+id/id_appName"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Posted: "
+        android:id="@+id/id_posted"
+        android:layout_below="@+id/id_appName"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Day,DD,MM,YYYY"
+        android:maxLength="16"
+        android:id="@+id/id_date"
+        android:layout_below="@+id/id_appName"
+        android:layout_toEndOf="@+id/id_posted" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/button_media"
+        android:layout_below="@+id/id_posted"
+        android:layout_toEndOf="@+id/imageView"
+        android:background="@drawable/media"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Play Now"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/button_media"
+        android:layout_toEndOf="@+id/id_posted"
+        android:visibility="invisible"/>
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_mainPause"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
